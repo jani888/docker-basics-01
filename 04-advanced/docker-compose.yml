@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  db:
+    image: mongo:latest
+    restart: always
+    mem_limit: 128m
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
